@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    background-color: var(--main-white-color);
+    color: var(--main-font-color);
+    font-size: var(--font-text);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+footer {
+    background-color: var(--background-grey-color);
+    color: var(--main-white-color);
+}
+
+// HW-8

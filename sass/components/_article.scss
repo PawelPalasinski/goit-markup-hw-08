@@ -1,0 +1,23 @@
+.article {
+    &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--light-gray-color);
+    }
+    &__heading {
+        font-size: var(--font-text);
+        line-height: var(--font-text-lh);
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__paragraph {
+        color: var(--description-color);
+        width: 270px;
+        letter-spacing: .03em;
+        line-height: var(--font-text-lh);
+        margin-top: 0;
+    }
+}

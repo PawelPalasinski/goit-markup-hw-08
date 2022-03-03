@@ -1,0 +1,42 @@
+.customers {
+    &__heading-box {
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: .03em;
+        & h2 {
+            letter-spacing: .03em;
+            font-size: var(--font-title);
+            padding-top: 94px;
+            padding-bottom: 0;
+    }
+    }
+}
+
+.customers-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 86px;
+    &__item {
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        margin: 50px 30px 0 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        & svg {
+            fill: #AFB1B8;
+            align-self: center;
+        }
+        &:hover, &:focus {
+            border: 1px solid var(--blue-color);
+            @include trans;       
+        }
+        &:hover svg, &:focus svg {
+            fill: var(--blue-color);
+            @include trans;       
+        }
+    }
+}

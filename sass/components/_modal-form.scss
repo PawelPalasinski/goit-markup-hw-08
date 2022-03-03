@@ -1,0 +1,133 @@
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        background-color: var(--main-white-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    & svg {
+        fill: black;
+    }
+}
+
+.data-form {
+    display: block;
+    padding: 40px 40px 0;
+    color: var(--description-color);
+    & input {
+        border: none;
+    }
+    &__paragraph {
+        font-size: 20px;
+        line-height: 0px;
+        text-align: center;
+        letter-spacing: .03em;
+        width: 100%;
+        color: var(--main-font-color);
+        font-weight: bold;
+        margin: 0 auto;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        padding-top: 12px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        color: var(--description-color);
+        & span {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            padding: 0;
+            border-radius: 4px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            margin: 4px 0 10px 0;
+            & svg {
+                fill: var(--main-font-color);
+                margin: 15px;
+            }
+            &:hover {
+                @include trans;
+                border: 1px solid var(--blue-color);
+                outline: none;
+                fill: var(--blue-color);
+            }
+            &:hover svg {
+                fill: var(--blue-color);
+            }
+        }
+    & input {
+        outline: none;
+    }
+    &__policy-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    }
+
+}
+
+textarea {
+    resize: none;
+    height: 118px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 10px 0;
+    &:hover, &:focus, &:active {
+        border: 1px solid var(--blue-color);
+        outline: none;
+        @include trans;
+    }
+}
+
+.policy-checkbox {
+    &__default {
+        display: none;
+    }
+    &__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+            outline: 2px solid #000;
+            border-radius: 4px;
+            margin-right: 7px;
+        }
+        & span {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: .03em;
+            color: var(--description-color);
+            & a {
+                color: var(--blue-color);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.policy-checkbox__default:checked+.policy-checkbox__checkbox::before {
+    background-color: var(--blue-color);
+    outline: 2px solid var(--blue-color);
+    background-image: url("../images/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include trans;
+}

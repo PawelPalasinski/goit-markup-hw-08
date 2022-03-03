@@ -1,0 +1,13 @@
+.section-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 94px 0;
+    &__article {
+        display: flex;
+        width: 270px;
+        flex-direction: column;
+    }
+}

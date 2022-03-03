@@ -1,0 +1,15 @@
+.logo {
+    @include logo;
+    color: var(--main-font-color);
+    &--color {
+        color: var(--blue-color);
+    }
+}
+
+.footer-box__logo {
+    @include logo;
+    color: var(--main-white-color);
+    &--color {
+        color: var(--blue-color);
+    }
+}
