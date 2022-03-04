@@ -305,11 +305,10 @@ footer {
 
 .team {
   background-color: var(--light-gray-color);
-  padding: 94px 0;
+  padding: 30px 0;
 }
 
 .team__heading-box {
-  padding: 0px 0 50px 0;
   text-align: center;
   margin: 0px auto;
   letter-spacing: .03em;
@@ -321,10 +320,10 @@ footer {
 }
 
 .team__members-box {
-  width: 450px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  row-gap: 30px;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -332,10 +331,10 @@ footer {
 
 .member {
   padding: 0;
-  margin: 0;
+  margin: 0 15px;
   background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  height: 428px;
+  height: 622px;
 }
 
 .member__profile {
@@ -346,7 +345,7 @@ footer {
 
 .member__icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 32px 30px 32px;
 }
 
@@ -357,12 +356,16 @@ footer {
 }
 
 .profile__photo {
-  width: 270px;
-  height: 260px;
+  width: 450px;
+  height: 460px;
   display: flex;
   justify-content: center;
-  justify-content: center;
   flex-direction: column;
+}
+
+.profile__photo img {
+  height: 460px;
+  object-fit: cover;
 }
 
 .profile__name {
@@ -370,7 +373,7 @@ footer {
   font-weight: 500;
   text-align: center;
   margin: 30px auto 0 auto;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   line-height: var(--font-description-lh);
   color: var(--main-font-color);
 }
@@ -380,7 +383,7 @@ footer {
   line-height: var(--btn-lh);
   text-align: center;
   margin: 10px auto 16px auto;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
 .icon-box {
@@ -394,14 +397,15 @@ footer {
 
 .icon-box__svg {
   align-self: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .icon-box:hover, .icon-box:focus {
   background-color: var(--blue-color);
 }
 
-.icon-box:hover .icon-box__svg, .icon-box:focus .icon-box__svg {
+.icon-box:hover .icon-box__svg,
+.icon-box:focus .icon-box__svg {
   fill: var(--main-white-color);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

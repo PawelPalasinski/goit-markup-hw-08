@@ -1,8 +1,7 @@
 .team {
     background-color: var(--light-gray-color);
-    padding: 94px 0;
+    padding: 30px 0;
     &__heading-box {
-        padding: 0px 0 50px 0;
         text-align: center;
         margin: 0px auto;
         letter-spacing: .03em;
@@ -12,10 +11,10 @@
         }
     }
     &__members-box {
-        width: 450px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        row-gap: 30px;
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
