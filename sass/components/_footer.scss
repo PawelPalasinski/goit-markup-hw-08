@@ -1,14 +1,19 @@
+
 .footer-container {
     padding-top: 60px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__contact {
         display: inline-block;
-        width: 247px;
-        margin-right: 70px;
+        text-align: center;
+        width: 450px;
     }
     &__join-us-box {
         display: inline-block;
         vertical-align: top;
+        width: 450px;
         & p {
             color: var(--main-white-color);
             font-weight: bold;
@@ -20,6 +25,7 @@
     &__subscribe-box-form {
         display: inline-block;
         vertical-align: top;
+        align-items: center;
     }
     &__button-box {
         display: inline-block;
@@ -30,11 +36,13 @@
 }
 
 .foot-contacts-list {
-    padding: 20px 0 60px 0;
-    margin: 0;
+    padding: 0 auto;
+    // margin: 0;
     list-style: none;
     &__item--address {
         @include addressAndphone;
+        margin: 0 auto;
+        padding: 0;
     }
     &__item--mail-and-phone {
         @include addressAndphone;
@@ -46,7 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 78px;
+    column-gap: 10px;
+    width: 450px;
     &__box {
         display: flex;
         width: 44px;
@@ -55,7 +64,7 @@
         justify-content: center;
         background: rgba(255, 255, 255, 0.1);
         cursor: pointer;
-        margin-right: 10px;
+        // margin-right: 10px;
         &:hover, &:focus {
             background-color: var(--blue-color);
             @include trans;
@@ -68,8 +77,9 @@
 }
 
 .subscribe-box {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__label {
         color: var(--main-white-color);
         font-size: var(--font-text);
@@ -80,7 +90,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 20px;
-        text-align: left;
+        text-align: center;
         margin-top: 1em;
         margin-right: 12px;
         & input {
@@ -91,7 +101,7 @@
             box-sizing: border-box;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
-            width: 358px;
+            width: 450px;
             height: 50px;
             padding: 16px;
             color: var(--main-white-color);
@@ -127,3 +137,142 @@
         margin: 13px 0 0 24px;
     }
 }
+
+.join-us-box {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    & p {
+    text-align: center;
+    }
+}
+
+// .footer-container {
+//     padding-top: 60px;
+//     display: flex;
+//     &__contact {
+//         display: inline-block;
+//         width: 247px;
+//         margin-right: 70px;
+//     }
+//     &__join-us-box {
+//         display: inline-block;
+//         vertical-align: top;
+//         & p {
+//             color: var(--main-white-color);
+//             font-weight: bold;
+//             font-size: var(--font-text);
+//             line-height: var(--font-text-lh);
+//             letter-spacing: .03em;
+//         }
+//         }
+//     &__subscribe-box-form {
+//         display: inline-block;
+//         vertical-align: top;
+//     }
+//     &__button-box {
+//         display: inline-block;
+//         vertical-align: top;
+//         margin-top: 48px;
+//         @include btnBlue;
+//         }
+// }
+
+// .foot-contacts-list {
+//     padding: 20px 0 60px 0;
+//     margin: 0;
+//     list-style: none;
+//     &__item--address {
+//         @include addressAndphone;
+//     }
+//     &__item--mail-and-phone {
+//         @include addressAndphone;
+//         opacity: 60%;
+//     }
+// }
+
+// .footer-icons {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-right: 78px;
+//     &__box {
+//         display: flex;
+//         width: 44px;
+//         height: 44px;
+//         border-radius: 45px;
+//         justify-content: center;
+//         background: rgba(255, 255, 255, 0.1);
+//         cursor: pointer;
+//         margin-right: 10px;
+//         &:hover, &:focus {
+//             background-color: var(--blue-color);
+//             @include trans;
+//         }
+//         & svg {
+//             fill: var(--main-white-color);
+//             align-self: center;
+//         }
+//     }
+// }
+
+// .subscribe-box {
+//     display: inline-block;
+//     vertical-align: top;
+//     &__label {
+//         color: var(--main-white-color);
+//         font-size: var(--font-text);
+//         font-weight: bold;
+//         line-height: 15px;
+//         letter-spacing: .03em;
+//         text-transform: uppercase;
+//         display: flex;
+//         flex-direction: column;
+//         row-gap: 20px;
+//         text-align: left;
+//         margin-top: 1em;
+//         margin-right: 12px;
+//         & input {
+//             display: flex;
+//             flex-direction: column;
+//             background: transparent;
+//             border: 1px solid rgba(255, 255, 255, 0.3);
+//             box-sizing: border-box;
+//             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//             border-radius: 4px;
+//             width: 358px;
+//             height: 50px;
+//             padding: 16px;
+//             color: var(--main-white-color);
+//             &::placeholder {
+//                 font-size: 16px;
+//                 letter-spacing: .03em;
+//             }
+//             &:hover, &:focus, &:active {
+//                 border: 1px solid var(--blue-color);
+//                 outline: none;
+//                 @include trans;
+//             }
+//         }
+//     }
+// }
+
+// .subsribe-btn {
+//     width: 200px;
+//     height: 50px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border: none;
+//     border-radius: 4px;
+//     background-color: var(--blue-color);
+//     color: var(--main-white-color);
+//     font-size: var(--font-description);
+//     line-height: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+//     &__icon {
+//         fill: var(--main-white-color);
+//         margin: 13px 0 0 24px;
+//     }
+// }
