@@ -1,4 +1,5 @@
-.footer-container {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .footer-container {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
@@ -8,7 +9,7 @@
   &__contact {
     display: inline-block;
     text-align: center;
-    width: 450px;
+    width: calc();
   }
   &__join-us-box {
     display: inline-block;
@@ -153,6 +154,7 @@
   & p {
     text-align: center;
   }
+}
 }
 
 // .footer-container {

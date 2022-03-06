@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
 .customers {
     &__heading-box {
         margin: 0 auto;
@@ -11,7 +12,6 @@
     }
     }
 }
-
 .customers-logos {
     display: flex;
     justify-content: space-around;
@@ -42,6 +42,7 @@
             @include trans;       
         }
     }
+}
 }
 
 // .customers {
