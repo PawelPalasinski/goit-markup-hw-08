@@ -1,48 +1,51 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-.customers {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .customers {
     &__heading-box {
-        margin: 0 auto;
-        text-align: center;
-        letter-spacing: .03em;
-        & h2 {
-            letter-spacing: .03em;
-            font-size: var(--font-title);
-            padding-top: 30px;
-            padding-bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0.03em;
+      & h2 {
+        letter-spacing: 0.03em;
+        font-size: var(--font-title);
+        padding-top: 30px;
+        padding-bottom: 0;
+      }
     }
-    }
-}
-.customers-logos {
+  }
+  .customers-logos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 86px;
     flex-wrap: wrap;
-    width: 450px;
-    margin: 0 15px;
+    max-width: 450px;
+    margin: 0 auto;
     row-gap: 30px;
     &__item {
-        width: 210px;
-        height: 92px;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        & svg {
-            fill: #AFB1B8;
-            align-self: center;
-        }
-        &:hover, &:focus {
-            border: 1px solid var(--blue-color);
-            @include trans;       
-        }
-        &:hover svg, &:focus svg {
-            fill: var(--blue-color);
-            @include trans;       
-        }
+      width: 210px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      & svg {
+        fill: #afb1b8;
+        align-self: center;
+      }
+      &:hover,
+      &:focus {
+        border: 1px solid var(--blue-color);
+        @include trans;
+      }
+      &:hover svg,
+      &:focus svg {
+        fill: var(--blue-color);
+        @include trans;
+      }
     }
-}
+  }
 }
 
 // .customers {
@@ -79,11 +82,11 @@
 //         }
 //         &:hover, &:focus {
 //             border: 1px solid var(--blue-color);
-//             @include trans;       
+//             @include trans;
 //         }
 //         &:hover svg, &:focus svg {
 //             fill: var(--blue-color);
-//             @include trans;       
+//             @include trans;
 //         }
 //     }
 // }
