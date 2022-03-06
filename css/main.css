@@ -474,8 +474,9 @@ footer {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  height: 603px;
 }
 
 .footer-container__contact {
@@ -495,7 +496,7 @@ footer {
   font-weight: bold;
   font-size: var(--font-text);
   line-height: var(--font-text-lh);
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
 .footer-container__subscribe-box-form {
@@ -507,7 +508,7 @@ footer {
 .footer-container__button-box {
   display: inline-block;
   vertical-align: top;
-  margin-top: 48px;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -524,8 +525,12 @@ footer {
 }
 
 .foot-contacts-list {
-  padding: 0 auto;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .foot-contacts-list__item--address {
@@ -545,6 +550,7 @@ footer {
   font-style: normal;
   text-decoration: none;
   opacity: 60%;
+  margin: 0 auto;
 }
 
 .footer-icons {
@@ -587,7 +593,7 @@ footer {
   font-size: var(--font-text);
   font-weight: bold;
   line-height: 15px;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -613,7 +619,7 @@ footer {
 
 .subscribe-box__label input::placeholder {
   font-size: 16px;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 }
 
 .subscribe-box__label input:hover, .subscribe-box__label input:focus, .subscribe-box__label input:active {
@@ -648,6 +654,7 @@ footer {
   width: 450px;
   display: flex;
   flex-direction: column;
+  padding: 60px 0;
 }
 
 .join-us-box p {
