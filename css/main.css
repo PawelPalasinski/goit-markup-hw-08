@@ -30,11 +30,6 @@ body {
   font-size: var(--font-text);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -42,6 +37,18 @@ header {
 footer {
   background-color: var(--background-grey-color);
   color: var(--main-white-color);
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+    margin: 0 auto;
+  }
 }
 
 .nav-container {
@@ -217,6 +224,7 @@ footer {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img-small.jpg");
   background-size: cover;
   height: 400px;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   flex-direction: column;
