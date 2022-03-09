@@ -73,25 +73,36 @@ footer {
   .nav__links-list {
     display: none;
   }
+  .nav__links-list__header-contacts-list {
+    display: none;
+  }
   .nav__header-contacts-list {
     display: none;
   }
-}
-
-.mobile-menu {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hamburger {
-  fill: black;
-  width: 24px;
-  height: 16px;
-  margin: 12px 8px;
+  .mobile-menu {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin: 12px 8px;
+  }
+  .mobile-menu {
+    fill: var(--main-font-color);
+  }
+  .mobile-menu svg {
+    width: 24px;
+    height: 16px;
+  }
+  .mobile-menu:hover {
+    fill: var(--blue-color);
+  }
+  .close-menu {
+    fill: var(--main-font-color);
+    cursor: pointer;
+  }
+  .close-menu:hover {
+    fill: var(--blue-color);
+  }
 }
 
 .mobile-box {
