@@ -60,16 +60,15 @@
             </li>
           </ul>
 
-      <button class="mobile-menu" type="button" onclick="myFunction()">
-                <svg>
-                  <use href="images/menu.svg#menu"></use>
-                </svg>
-    </button>
-
+          <button class="mobile-menu" type="button" onclick="myFunction()">
+            <svg>
+              <use href="images/menu.svg#menu"></use>
+            </svg>
+          </button>
         </nav>
       </div>
 
-    <div class="mobile-box" style="display: none;" id="menu">
+      <div class="mobile-box" style="display: none" id="menu">
         <div class="mobile-box__close close-mobile__btn" onclick="myFunction()">
           <button class="mobile-box__btn">
             <svg class="close-menu" width="11" height="11">
@@ -77,53 +76,44 @@
             </svg>
           </button>
         </div>
-    <nav class="nav-mobile">
+        <nav class="nav-mobile">
           <ul class="nav-mobile__links-list mobile-link">
             <li class="nav-link">
-              <a
-                
-                href="index.html"
-                >Agencja</a
-              >
+              <a href="index.html">Agencja</a>
             </li>
             <li class="nav-link">
-              <a  href="portfolio.html"
-                >Portfolio</a
-              >
+              <a href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-link">
-              <a  href="#">Kontakt</a>
+              <a href="#">Kontakt</a>
             </li>
           </ul>
 
-      <ul class="nav-mobile__contact">
-          <li class="contact-link--phone">
-          <a  href="tel:+48111111111">
-            +48 111 111 111</a
-          >
-        </li>
-        <li class="contact-link--mail">
-          <a  href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-        </li>
+          <ul class="nav-mobile__contact">
+            <li class="contact-link--phone">
+              <a href="tel:+48111111111"> +48 111 111 111</a>
+            </li>
+            <li class="contact-link--mail">
+              <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+          </ul>
 
-      </ul>
-
-      <ul class="nav-mobile__social-list mobile-link">
-        <li class="social-link">
-          <a href="#" >Instagram</a></li>
-        <li class="social-link">
-          <a href="#" >Twitter</a></li>
-        <li class="social-link">
-          <a href="#" >Facebook</a></li>
-        <li class="social-link">
-          <a href="#" >LinkedIn</a></li>
-      </ul>
-
-    </nav>
-    </div>
-
+          <ul class="nav-mobile__social-list mobile-link">
+            <li class="social-link">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="social-link">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="social-link">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="social-link">
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <section class="section main-title">
         <h1 class="main-title__heading">
@@ -200,9 +190,8 @@
           <div class="what-we-do-box">
             <img
               src="images/what_we_do1.jpg"
+              srcset="images/what-we-do1@2x.jpg 2x"
               alt="coding"
-              width="370"
-              height="294"
             />
             <p class="label">APLIKACJE KOMPUTEROWE</p>
           </div>
@@ -212,9 +201,8 @@
           <div class="what-we-do-box">
             <img
               src="images/what_we_do2.jpg"
+              srcset="images/what-we-do2@2x.jpg 2x"
               alt="responsive web application"
-              width="370"
-              height="294"
             />
             <p class="label">APLIKACJE MOBILNE</p>
           </div>
@@ -224,9 +212,8 @@
           <div class="what-we-do-box">
             <img
               src="images/what_we_do3.jpg"
+              srcset="images/what-we-do3@2x.jpg 2x"
               alt="modern design"
-              width="370"
-              height="294"
             />
             <p class="label">ROZWIĄZANIA GRAFICZNE</p>
           </div>
@@ -243,7 +230,11 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img src="images/team1.jpg" alt="John Doe" />
+                <img
+                  src="images/team1.jpg"
+                  srcset="images/team1@2.jpg 2x"
+                  alt="John Doe"
+                />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Product Designer</li>
@@ -275,7 +266,11 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img src="images/team2.jpg" alt="John Doe" />
+                <img
+                  src="images/team2.jpg"
+                  srcset="images/team2@2.jpg 2x"
+                  alt="John Doe"
+                />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Frontend Developer</li>
@@ -307,7 +302,11 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img src="images/team3.jpg" alt="John Doe" />
+                <img
+                  src="images/team3.jpg"
+                  srcset="images/team3@2.jpg 2x"
+                  alt="John Doe"
+                />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Marketing</li>
@@ -339,7 +338,11 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img src="images/team4.jpg" alt="John Doe" />
+                <img
+                  src="images/team4.jpg"
+                  srcset="images/team4@2.jpg 2x"
+                  alt="John Doe"
+                />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">UI Designer</li>
@@ -576,6 +579,5 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-
   </body>
 </html>
