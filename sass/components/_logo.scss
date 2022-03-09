@@ -13,3 +13,11 @@
         color: var(--blue-color);
     }
 }
+
+.footer-box {
+  &__logo--footer {
+    text-decoration: none;
+    color: var(--main-white-color);
+    margin-bottom: 20px;
+  }
+}
