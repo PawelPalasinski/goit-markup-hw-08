@@ -1,98 +1,132 @@
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
 .nav-container {
-    max-width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .nav {
     display: flex;
-    align-items: center;
-    height: 80px;
-    max-width: 1200px;
+    justify-content: space-between;
+    height: 60px;
+    max-width: 480px;
     &__logo {
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
+        padding: 16px 0;
     }
     &__links-list {
-        list-style: none;
-        display: flex;
-        box-sizing: border-box;
-        column-gap: 46px;
-        font-weight: 500;
-        color: var(--main-font-color);
+        display: none;
         }
         &__header-contacts-list {
-            list-style: none;
-            display: flex;
-            box-sizing: border-box;
-            column-gap: 40px;
-            margin-left: 345px;
-            padding-left: 0;
-        }
-    }
-
-
-.nav-list__link {  
-    &--page-link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--main-font-color);
-        position: relative;
-        &:hover, &:after {
-            color: var(--blue-color);
-            @include trans;
-        }
-        &:hover::after {
-            max-width: 100%;
-            left: 0;
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
-    }
-    &--page-link-active {
-        text-decoration: none;
-        color: var(--blue-color);
-        position: relative;
-        // &:hover, &:focus {
-        //     color: var(--blue-color);
-        //     @include trans;
-        // }
-        // &:hover::after {
-        //     width: 100%;
-        //     left: 0;
-        // }
-        &::after {
-            @include linkAfter;
-            max-width: 100%;
+            display: none;
         }
     }
 }
 
-.header-contact {
-    &__link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--description-color);
-        position: relative;
-        fill: var(--description-color);
-        &:hover, &:focus {
-            color: var(--blue-color);
-            @include trans;
-            fill: var(--blue-color);
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
-        &:hover::after {
-            max-width: 100%;
-            left: 0;
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
-    }
+.mobile-menu {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
+
+.hamburger {
+    fill: black;
+    width: 24px;
+    height: 16px;
+    margin: 12px 8px;
+}
+
+
+// .nav-container {
+//     width: 1200px;
+//     margin: 0 auto;
+// }
+
+// .nav {
+//     display: flex;
+//     align-items: center;
+//     height: 80px;
+//     width: 1200px;
+//     &__logo {
+//         padding-top: 24px;
+//         padding-bottom: 25px;
+//         margin-right: 93px;
+//     }
+//     &__links-list {
+//         list-style: none;
+//         display: flex;
+//         box-sizing: border-box;
+//         column-gap: 46px;
+//         font-weight: 500;
+//         color: var(--main-font-color);
+//         }
+//         &__header-contacts-list {
+//             list-style: none;
+//             display: flex;
+//             box-sizing: border-box;
+//             column-gap: 40px;
+//             margin-left: 345px;
+//             padding-left: 0;
+//         }
+//     }
+
+
+// .nav-list__link {  
+//     &--page-link {
+//         text-decoration: none;
+//         font-weight: 500;
+//         color: var(--main-font-color);
+//         position: relative;
+//         &:hover, &:after {
+//             color: var(--blue-color);
+//             @include trans;
+//         }
+//         &:hover::after {
+//             width: 100%;
+//             left: 0;
+//         }
+//         &::after {
+//             @include linkAfter;
+//             @include trans;
+//         }
+//     }
+//     &--page-link-active {
+//         text-decoration: none;
+//         color: var(--blue-color);
+//         position: relative;
+//         &::after {
+//             @include linkAfter;
+//             width: 100%;
+//         }
+//     }
+// }
+
+// .header-contact {
+//     &__link {
+//         text-decoration: none;
+//         font-weight: 500;
+//         color: var(--description-color);
+//         position: relative;
+//         fill: var(--description-color);
+//         &:hover, &:focus {
+//             color: var(--blue-color);
+//             @include trans;
+//             fill: var(--blue-color);
+//         }
+//         &::after {
+//             @include linkAfter;
+//             @include trans;
+//         }
+//         &:hover::after {
+//             width: 100%;
+//             left: 0;
+//         }
+//         &::after {
+//             @include linkAfter;
+//             @include trans;
+//         }
+//     }
+// }

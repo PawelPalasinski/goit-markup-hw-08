@@ -17,7 +17,7 @@
 
   <body>
     <header>
-      <!-- <div class="container">
+      <div class="container">
         <nav class="nav">
           <a class="logo nav__logo" href="index.html" rel="home"
             ><span class="logo--color">Web</span>Studio</a
@@ -59,8 +59,78 @@
               >
             </li>
           </ul>
+
+      <button class="mobile-menu" type="button" onclick="myFunction()">
+      <svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+        />
+      </svg>
+    </button>
+
         </nav>
-      </div> -->
+      </div>
+
+
+
+    <!-- menu mobile -->
+    <div class="mobile-box" id="menu">
+        <div class="mobile-box__close close-mobile__btn" onclick="myFunction()">
+          <button class="mobile-box__btn">
+            <svg class="hamburger" width="11" height="11">
+              <use href="images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+    <nav class="nav-mobile">
+          <ul class="nav-mobile__links-list mobile-link">
+            <li class="nav-link">
+              <a
+                
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="nav-link">
+              <a  href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-link">
+              <a  href="#">Kontakt</a>
+            </li>
+          </ul>
+
+      <ul class="nav-mobile__contact">
+          <li class="contact-link--phone">
+          <a  href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li class="contact-link--mail">
+          <a  href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+
+      </ul>
+
+      <ul class="nav-mobile__social-list mobile-link">
+        <li class="social-link">
+          <a href="#" >Instagram</a></li>
+        <li class="social-link">
+          <a href="#" >Twitter</a></li>
+        <li class="social-link">
+          <a href="#" >Facebook</a></li>
+        <li class="social-link">
+          <a href="#" >LinkedIn</a></li>
+      </ul>
+
+    </nav>
+    </div>
+    <!-- menu mobile -->
 
       <section class="section main-title">
         <h1 class="main-title__heading">
@@ -180,10 +250,7 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img
-                  src="images/team1.jpg"
-                  alt="John Doe"
-                />
+                <img src="images/team1.jpg" alt="John Doe" />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Product Designer</li>
@@ -215,10 +282,7 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img
-                  src="images/team2.jpg"
-                  alt="John Doe"
-                />
+                <img src="images/team2.jpg" alt="John Doe" />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Frontend Developer</li>
@@ -250,10 +314,7 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img
-                  src="images/team3.jpg"
-                  alt="John Doe"
-                />
+                <img src="images/team3.jpg" alt="John Doe" />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">Marketing</li>
@@ -285,10 +346,7 @@
           <div class="team-member member">
             <ul class="team-member-list member__profile profile">
               <li class="profile__photo">
-                <img
-                  src="images/team4.jpg"
-                  alt="John Doe"
-                />
+                <img src="images/team4.jpg" alt="John Doe" />
               </li>
               <li class="profile__name">Jahn Doe</li>
               <li class="profile__description">UI Designer</li>
@@ -524,5 +582,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
