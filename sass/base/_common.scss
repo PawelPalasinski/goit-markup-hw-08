@@ -22,6 +22,15 @@ footer {
     .container {
         max-width: 450px;
         margin: 0 auto;
+            &:after {
+        content: "";
+        display: block;
+        width: 110%;
+        height: 1px;
+        border-top: 1px solid #ECECEC;
+        margin-left: -20px;
+        padding: -10px;
+    }
     }
 }
 
@@ -29,6 +38,7 @@ footer {
     .container {
         max-width: 738px;
         margin: 0 auto;
+        
     }
 }
 
