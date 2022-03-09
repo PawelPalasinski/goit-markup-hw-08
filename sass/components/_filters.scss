@@ -1,18 +1,24 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
 .filters {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    justify-content: flex-start;
     column-gap: 8px;
+    padding: 0;
     &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 8px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 15px 8px;
+        justify-content: stretch; 
+        justify-items: stretch; 
+        padding: 0;
     }
 }
 
 .filters-list {
-    margin-top: 94px;
+    margin-top: 60px;
     list-style: none;
     &__button {
         &:hover, &:focus {
@@ -22,6 +28,7 @@
             @include trans;  
         }
         & button {
+            width: 100%;
             background-color: var(--light-gray-color);
             font-weight: bold;
             color: var(--main-font-color);
@@ -40,3 +47,48 @@
         }
     }
 }
+
+}
+
+// .filters {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     column-gap: 8px;
+//     &__list {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         column-gap: 8px;
+//     }
+// }
+
+// .filters-list {
+//     margin-top: 94px;
+//     list-style: none;
+//     &__button {
+//         &:hover, &:focus {
+//             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+//             0px 1px 2px rgba(0, 0, 0, 0.08),
+//             0px 2px 2px rgba(0, 0, 0, 0.12);
+//             @include trans;  
+//         }
+//         & button {
+//             background-color: var(--light-gray-color);
+//             font-weight: bold;
+//             color: var(--main-font-color);
+//             border: none;
+//             border-radius: 4px;
+//             padding: 6px 22px;
+//             cursor: pointer;
+//             line-height: 1.62;
+//             transition: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             &:hover, &:focus {
+//                 background-color: var(--blue-color);
+//                 color: var(--main-white-color);
+//                 @include trans;
+//             }
+//         }
+//     }
+// }
