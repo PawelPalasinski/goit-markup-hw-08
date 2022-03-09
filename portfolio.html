@@ -29,14 +29,14 @@
 
           <ul class="nav__links-list">
             <li class="nav-list links__item">
-              <a class="link active nav-list__link--page-link" href="index.html"
+              <a
+                class="link active nav-list__link--page-link-active"
+                href="index.html"
                 >Agencja</a
               >
             </li>
             <li class="nav-list links__item">
-              <a
-                class="link nav-list__link--page-link-active"
-                href="portfolio.html"
+              <a class="link nav-list__link--page-link" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -63,9 +63,70 @@
               >
             </li>
           </ul>
+
+      <button class="mobile-menu" type="button" onclick="myFunction()">
+                <svg>
+                  <use href="images/menu.svg#menu"></use>
+                </svg>
+    </button>
+
         </nav>
       </div>
-    </header>
+
+    <div class="mobile-box" style="display: none;" id="menu">
+        <div class="mobile-box__close close-mobile__btn" onclick="myFunction()">
+          <button class="mobile-box__btn">
+            <svg class="close-menu" width="11" height="11">
+              <use href="images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+    <nav class="nav-mobile">
+          <ul class="nav-mobile__links-list mobile-link">
+            <li class="nav-link">
+              <a
+                
+                href="index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="nav-link">
+              <a  href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-link">
+              <a  href="#">Kontakt</a>
+            </li>
+          </ul>
+
+      <ul class="nav-mobile__contact">
+          <li class="contact-link--phone">
+          <a  href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li class="contact-link--mail">
+          <a  href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+
+      </ul>
+
+      <ul class="nav-mobile__social-list mobile-link">
+        <li class="social-link">
+          <a href="#" >Instagram</a></li>
+        <li class="social-link">
+          <a href="#" >Twitter</a></li>
+        <li class="social-link">
+          <a href="#" >Facebook</a></li>
+        <li class="social-link">
+          <a href="#" >LinkedIn</a></li>
+      </ul>
+
+    </nav>
+    </div>
 
     <main>
       <div class="container">
@@ -435,5 +496,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
