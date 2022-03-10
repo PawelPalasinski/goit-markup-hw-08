@@ -1013,20 +1013,22 @@ footer {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 231px .5fr .5fr;
-    height: 463;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 150px 83px;
     padding: 0;
-    margin: 0 auto;
+    justify-content: stretch;
+    justify-items: stretch;
+    grid-template-areas: "contact join-us-box" "subscribe subscribe" "button-box button-box";
+    height: 463px;
   }
   .footer-container__contact {
     justify-self: center;
-    margin-top: 60px;
+    align-self: end;
+    grid-area: contact;
   }
   .footer-container__join-us-box {
-    align-self: start;
-    justify-self: start;
-    padding: 0;
+    grid-area: join-us-box;
+    align-self: end;
   }
   .footer-container__join-us-box p {
     color: var(--main-white-color);
@@ -1036,21 +1038,14 @@ footer {
     letter-spacing: 0.03em;
   }
   .footer-container__subscribe-box-form {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: span 3;
-    justify-self: center;
-    align-self: start;
-    margin: 60px 0 0;
+    grid-area: subscribe;
+    align-self: end;
+    margin-bottom: 20px;
   }
   .footer-container__button-box {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: span 4;
-    align-self: start;
+    grid-area: button-box;
     margin: 0 auto;
+    align-self: start;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1402,6 +1397,49 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filters__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+  .filters-list {
+    margin-top: 60px;
+    list-style: none;
+  }
+  .filters-list__button:hover, .filters-list__button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filters-list__button button {
+    background-color: var(--light-gray-color);
+    font-weight: bold;
+    color: var(--main-font-color);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
+    line-height: 1.62;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filters-list__button button:hover, .filters-list__button button:focus {
+    background-color: var(--blue-color);
+    color: var(--main-white-color);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 @media screen and (min-width: 320px) {
   .projects-main-list {
     display: flex;
@@ -1485,16 +1523,17 @@ footer {
 
 @media screen and (min-width: 768px) {
   .projects-main-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 94px;
-    padding: 0;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 354px 354px;
+    grid-template-rows: auto;
     list-style: none;
+    max-width: 738px;
   }
   .projects-main-list__item {
     border: 1px solid var(--border-grey-color);
+    max-width: 354px;
+    margin: 0 auto;
+    padding: 0;
   }
   .projects-main-list__item:hover, .projects-main-list__item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1510,10 +1549,11 @@ footer {
     margin: 0;
     padding: 0;
     list-style: none;
+    max-width: 354px;
   }
   .project__img-box-overlay {
     box-sizing: border-box;
-    max-width: 370px;
+    max-width: 354px;
     height: 294px;
     position: relative;
     overflow: hidden;
@@ -1524,7 +1564,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100%;
+    max-width: 354px;
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translatey(140%);
@@ -1556,6 +1596,11 @@ footer {
     color: var(--description-color);
     line-height: var(--btn-lh);
     padding: 4px 24px 20px 24px;
+  }
+  .project-img {
+    max-width: 354px;
+    height: 294px;
+    object-fit: cover;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -160,19 +160,24 @@
 @media screen and (min-width: 768px) {
   .footer-container {
   display: grid; 
-  grid-template-columns: 50% 50%; 
-  grid-template-rows: 231px .5fr .5fr;
-  height: 463;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 200px 150px 83px;
   padding: 0;
-  margin: 0 auto;
+  justify-content: stretch; 
+  justify-items: stretch;
+    grid-template-areas: 
+    "contact join-us-box"
+    "subscribe subscribe"
+    "button-box button-box";
+    height: 463px;
     &__contact {
       justify-self: center;
-      margin-top: 60px;
+      align-self: end;
+      grid-area: contact;
     }
     &__join-us-box {
-        align-self: start;
-        justify-self: start;
-        padding: 0;
+      grid-area: join-us-box;
+      align-self: end;
       & p {
         color: var(--main-white-color);
         font-weight: bold;
@@ -182,21 +187,14 @@
       }
     }
     &__subscribe-box-form {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: span 3;
-        justify-self: center;
-        align-self: start;
-        margin: 60px 0 0;
+        grid-area: subscribe;
+        align-self: end;
+        margin-bottom: 20px;
     }
     &__button-box {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: span 4;
-        align-self: start;
+        grid-area: button-box;
         margin: 0 auto;
+        align-self: start;
       @include btnBlue;
     }
   }
