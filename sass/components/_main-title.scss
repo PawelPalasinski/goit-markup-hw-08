@@ -1,113 +1,90 @@
 .main-title {
-    padding: 94px 0;
-    display: flex;
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img-small.jpg");
-    background-size: cover;
-    height: 400px;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    column-gap: 30px;
-    &__heading {
-        font-size: 26px;
-        color: var(--main-white-color);
-        line-height: var(--font-header-lh);
-        text-align: center;
-        letter-spacing: 0.06em;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 30px;
+  &__heading {
+    color: var(--main-white-color);
+    line-height: var(--font-header-lh);
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  &__button {
+    @include btnBlue;
+    &:hover,
+    &:focus {
+      @include trans;
     }
-    &__button {
-        @include btnBlue;
-        &:hover, &:focus {
-            @include trans;
-        }
-    }
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .main-title {
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img-small@2.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img-small@2.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
-screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .main-title {
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img-medium@2.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img-medium@2.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .main-title {
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img@2.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img@2.jpg");
     background-size: cover;
   }
 }
 
-
-@media screen and (min-width: 768px) {
-.main-title {
-    padding: 60px 0;
-    display: flex;
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img.jpg") no-repeat top center;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .main-title {
+    padding: 94px 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img-small.jpg");
     background-size: cover;
     height: 400px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    column-gap: 30px;
+    width: 100vw;
     &__heading {
-        font-size: var(--font-header);
-        color: var(--main-white-color);
-        line-height: var(--font-header-lh);
-        text-align: center;
-        letter-spacing: 0.06em;
+      font-size: 26px;
     }
-    &__button {
-        @include btnBlue;
-        &:hover, &:focus {
-            @include trans;
-        }
-    }
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    padding: 60px 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img-medium.jpg") no-repeat top center;
+    background-size: cover;
+    height: 400px;
+    &__heading {
+      font-size: var(--font-header);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.main-title {
+  .main-title {
     padding: 94px 0;
-    display: flex;
-    background: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url("../images/bg-img.jpg") no-repeat top center;
-    background-size: cover;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/bg-img.jpg") no-repeat top center;
     height: 600px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    column-gap: 30px;
     &__heading {
-        font-size: var(--font-header);
-        color: var(--main-white-color);
-        line-height: var(--font-header-lh);
-        text-align: center;
-        letter-spacing: 0.06em;
+      font-size: var(--font-header);
     }
-    &__button {
-        @include btnBlue;
-        &:hover, &:focus {
-            @include trans;
-        }
-    }
-}
+  }
 }
