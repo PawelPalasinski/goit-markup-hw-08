@@ -1,12 +1,18 @@
+.nav-container {
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-container {
     max-width: 480px;
-    margin: 0 auto;
     padding: 0;
   }
 
   .nav {
-    display: flex;
     justify-content: space-between;
     height: 60px;
     max-width: 480px;
@@ -52,14 +58,12 @@
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.nav-container {
+  .nav-container {
     max-width: 738px;
-    margin: 0 auto;
-}
+  }
 
-.nav {
+  .nav {
     display: flex;
     align-items: center;
     height: 80px;
@@ -67,186 +71,185 @@
     margin: 0;
     padding: 0;
     &__logo {
-        padding: 26px 0;
-        margin-right: 43px;
+      padding: 26px 0;
+      margin-right: 43px;
     }
     &__links-list {
-        list-style: none;
-        display: flex;
-        box-sizing: border-box;
-        column-gap: 60px;
-        font-weight: 500;
-        color: var(--main-font-color);
-        }
-        &__header-contacts-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-            box-sizing: border-box;
-            margin-left: 101px;
-            padding: 0;
-            font-size: 12px;
-            & li {
-              display: inline;
-              width: 131px;
-            }
-            }
+      list-style: none;
+      display: flex;
+      box-sizing: border-box;
+      column-gap: 60px;
+      font-weight: 500;
+      color: var(--main-font-color);
+    }
+    &__header-contacts-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      box-sizing: border-box;
+      margin-left: 101px;
+      padding: 0;
+      font-size: 12px;
+      & li {
+        display: inline;
+        width: 131px;
+      }
+    }
+  }
 
-        }
-
-.nav-list__link {
+  .nav-list__link {
     &--page-link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--main-font-color);
-        position: relative;
-        &:hover, &:after {
-            color: var(--blue-color);
-            @include trans;
-        }
-        &:hover::after {
-            width: 100%;
-            left: 0;
-            
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--main-font-color);
+      position: relative;
+      &:hover,
+      &:after {
+        color: var(--blue-color);
+        @include trans;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+      &::after {
+        @include linkAfter;
+        @include trans;
+      }
     }
     &--page-link-active {
-        text-decoration: none;
-        color: var(--blue-color);
-        position: relative;
-        &::after {
-            @include linkAfter;
-            width: 100%;
-        }
+      text-decoration: none;
+      color: var(--blue-color);
+      position: relative;
+      &::after {
+        @include linkAfter;
+        width: 100%;
+      }
     }
-}
+  }
 
-.header-contact {
+  .header-contact {
     &__link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--description-color);
-        position: relative;
-        fill: var(--description-color);
-        &:hover, &:focus {
-            color: var(--blue-color);
-            @include trans;
-            fill: var(--blue-color);
-        }
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--description-color);
+      position: relative;
+      fill: var(--description-color);
+      &:hover,
+      &:focus {
+        color: var(--blue-color);
+        @include trans;
+        fill: var(--blue-color);
+      }
     }
-}
+  }
 
-    .mobile-menu {
-      display: none;
-    }
-
+  .mobile-menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.nav-container {
+  .nav-container {
     width: 1200px;
-    margin: 0 auto;
-}
+  }
 
-.nav {
-    display: flex;
+  .nav {
     align-items: center;
     height: 80px;
     width: 1200px;
     &__logo {
-        padding-top: 24px;
-        padding-bottom: 25px;
-        margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
     }
     &__links-list {
-        list-style: none;
-        display: flex;
-        box-sizing: border-box;
-        column-gap: 46px;
-        font-weight: 500;
-        color: var(--main-font-color);
-        }
-        &__header-contacts-list {
-            list-style: none;
-            display: flex;
-            box-sizing: border-box;
-            column-gap: 30px;
-            margin-left: 345px;
-            padding-left: 0;
-        }
+      list-style: none;
+      display: flex;
+      box-sizing: border-box;
+      column-gap: 46px;
+      font-weight: 500;
+      color: var(--main-font-color);
     }
-
-.nav-list__link {  
-    &--page-link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--main-font-color);
-        position: relative;
-        &:hover, &:after {
-            color: var(--blue-color);
-            @include trans;
-        }
-        &:hover::after {
-            width: 100%;
-            left: 0;
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
-    }
-    &--page-link-active {
-        text-decoration: none;
-        color: var(--blue-color);
-        position: relative;
-        &:hover, &:focus {
-            color: var(--blue-color);
-            @include trans;
-        }
-        &:hover::after {
-            width: 100%;
-            left: 0;
-        }
-        &::after {
-            @include linkAfter;
-            width: 100%;
-        }
-    }
-}
-
-.header-contact {
-    &__link {
-        text-decoration: none;
-        font-weight: 500;
-        color: var(--description-color);
-        position: relative;
-        fill: var(--description-color);
-        &:hover, &:focus {
-            color: var(--blue-color);
-            @include trans;
-            fill: var(--blue-color);
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
-        &:hover::after {
-            width: 100%;
-            left: 0;
-        }
-        &::after {
-            @include linkAfter;
-            @include trans;
-        }
+    &__header-contacts-list {
+      list-style: none;
+      display: flex;
+      box-sizing: border-box;
+      column-gap: 30px;
+      margin-left: 345px;
+      padding-left: 0;
     }
   }
-    .mobile-menu {
-      display: none;
-    }
 
+  .nav-list__link {
+    &--page-link {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--main-font-color);
+      position: relative;
+      &:hover,
+      &:after {
+        color: var(--blue-color);
+        @include trans;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+      &::after {
+        @include linkAfter;
+        @include trans;
+      }
+    }
+    &--page-link-active {
+      text-decoration: none;
+      color: var(--blue-color);
+      position: relative;
+      &:hover,
+      &:focus {
+        color: var(--blue-color);
+        @include trans;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+      &::after {
+        @include linkAfter;
+        width: 100%;
+      }
+    }
+  }
+
+  .header-contact {
+    &__link {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--description-color);
+      position: relative;
+      fill: var(--description-color);
+      &:hover,
+      &:focus {
+        color: var(--blue-color);
+        @include trans;
+        fill: var(--blue-color);
+      }
+      &::after {
+        @include linkAfter;
+        @include trans;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+      &::after {
+        @include linkAfter;
+        @include trans;
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
 }
