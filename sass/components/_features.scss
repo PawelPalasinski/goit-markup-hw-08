@@ -1,12 +1,12 @@
-  .section-features {
+.section-features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  &__article {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    &__article {
-      display: flex;
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
+}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .section-features {
@@ -33,12 +33,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-.section-features {
+  .section-features {
     justify-content: space-between;
     width: 1200px;
     padding: 94px 0;
     &__article {
-        width: 270px;
+      width: 270px;
     }
-}
+  }
 }

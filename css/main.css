@@ -707,7 +707,7 @@ footer {
 
 .article__paragraph {
   color: var(--description-color);
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   line-height: var(--font-text-lh);
   margin-top: 0;
 }
@@ -2122,11 +2122,45 @@ footer {
   }
 }
 
+.filters {
+  display: flex;
+  column-gap: 8px;
+}
+
+.filters-list {
+  list-style: none;
+}
+
+.filters-list__button:hover, .filters-list__button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-list__button button {
+  width: 100%;
+  background-color: var(--light-gray-color);
+  font-weight: bold;
+  color: var(--main-font-color);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  line-height: 1.62;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-list__button button:hover, .filters-list__button button:focus {
+  background-color: var(--blue-color);
+  color: var(--main-white-color);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .filters {
-    display: flex;
     justify-content: flex-start;
-    column-gap: 8px;
     padding: 0;
   }
   .filters__list {
@@ -2140,40 +2174,13 @@ footer {
   }
   .filters-list {
     margin-top: 60px;
-    list-style: none;
-  }
-  .filters-list__button:hover, .filters-list__button:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button {
-    width: 100%;
-    background-color: var(--light-gray-color);
-    font-weight: bold;
-    color: var(--main-font-color);
-    border: none;
-    border-radius: 4px;
-    padding: 6px 22px;
-    cursor: pointer;
-    line-height: 1.62;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button:hover, .filters-list__button button:focus {
-    background-color: var(--blue-color);
-    color: var(--main-white-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .filters {
-    display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 8px;
     flex-wrap: wrap;
   }
   .filters__list {
@@ -2184,39 +2191,13 @@ footer {
   }
   .filters-list {
     margin-top: 60px;
-    list-style: none;
-  }
-  .filters-list__button:hover, .filters-list__button:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button {
-    background-color: var(--light-gray-color);
-    font-weight: bold;
-    color: var(--main-font-color);
-    border: none;
-    border-radius: 4px;
-    padding: 6px 22px;
-    cursor: pointer;
-    line-height: 1.62;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button:hover, .filters-list__button button:focus {
-    background-color: var(--blue-color);
-    color: var(--main-white-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filters {
-    display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 8px;
   }
   .filters__list {
     display: flex;
@@ -2226,30 +2207,6 @@ footer {
   }
   .filters-list {
     margin-top: 94px;
-    list-style: none;
-  }
-  .filters-list__button:hover, .filters-list__button:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button {
-    background-color: var(--light-gray-color);
-    font-weight: bold;
-    color: var(--main-font-color);
-    border: none;
-    border-radius: 4px;
-    padding: 6px 22px;
-    cursor: pointer;
-    line-height: 1.62;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .filters-list__button button:hover, .filters-list__button button:focus {
-    background-color: var(--blue-color);
-    color: var(--main-white-color);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

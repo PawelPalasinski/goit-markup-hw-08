@@ -1,41 +1,41 @@
-  .customers {
-    &__heading-box {
-      margin: 0 auto;
-      text-align: center;
+.customers {
+  &__heading-box {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.03em;
+    & h2 {
       letter-spacing: 0.03em;
-      & h2 {
-        letter-spacing: 0.03em;
-        font-size: var(--font-title);
-        padding-bottom: 0;
-      }
+      font-size: var(--font-title);
+      padding-bottom: 0;
     }
   }
-  .customers-logos {
+}
+.customers-logos {
+  display: flex;
+  align-items: center;
+  &__item {
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    &__item {
-      height: 92px;
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      & svg {
-        fill: #afb1b8;
-        align-self: center;
-      }
-      &:hover,
-      &:focus {
-        border: 1px solid var(--blue-color);
-        @include trans;
-      }
-      &:hover svg,
-      &:focus svg {
-        fill: var(--blue-color);
-        @include trans;
-      }
+    justify-content: center;
+    & svg {
+      fill: #afb1b8;
+      align-self: center;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid var(--blue-color);
+      @include trans;
+    }
+    &:hover svg,
+    &:focus svg {
+      fill: var(--blue-color);
+      @include trans;
     }
   }
+}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .customers {
@@ -60,41 +60,41 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-.customers {
+  .customers {
     &__heading-box {
-        & h2 {
-            padding-top: 60px;
+      & h2 {
+        padding-top: 60px;
+      }
     }
-    }
-}
+  }
 
-.customers-logos {
+  .customers-logos {
     max-width: 738px;
     padding-bottom: 60px;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
     &__item {
-        width: 226px;
-        align-items: center;
+      width: 226px;
+      align-items: center;
     }
-}
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.customers {
+  .customers {
     &__heading-box {
-        & h2 {
-            padding-top: 94px;
+      & h2 {
+        padding-top: 94px;
+      }
     }
-    }
-}
+  }
 
-.customers-logos {
+  .customers-logos {
     justify-content: space-around;
     padding-bottom: 86px;
     &__item {
-        width: 170px;
+      width: 170px;
     }
-}
+  }
 }
