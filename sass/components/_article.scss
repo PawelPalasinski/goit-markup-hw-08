@@ -1,56 +1,53 @@
-@media screen and (min-width: 320px) {
 .article {
     &__icon {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
+    border-radius: 4px;
+    background-color: var(--light-gray-color);
+    }
+    &__heading {
+        font-size: var(--font-text);
+        line-height: var(--font-text-lh);
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &__paragraph {
+        color: var(--description-color);
+        letter-spacing: .03em;
+        line-height: var(--font-text-lh);
+        margin-top: 0;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) {
+.article {
+    &__icon {
     max-width: 450px;
     margin: 0;
     border-radius: 4px;
     background-color: var(--light-gray-color);
     }
     &__heading {
-        font-size: var(--font-text);
-        line-height: var(--font-text-lh);
-        margin-top: 30px;
-        margin-bottom: 10px;
         align-self: center;
     }
     &__paragraph {
-        color: var(--description-color);
         max-width: 450px;
-        letter-spacing: .03em;
-        line-height: var(--font-text-lh);
-        margin-top: 0;
     }
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
 .article {
     &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
     max-width: 354px;
     column-gap: 30px;
-    border-radius: 4px;
-    background-color: var(--light-gray-color);
-    }
-    &__heading {
-        font-size: var(--font-text);
-        line-height: var(--font-text-lh);
-        margin-top: 30px;
-        margin-bottom: 10px;
     }
     &__paragraph {
-        color: var(--description-color);
         max-width: 354px;
-        letter-spacing: .03em;
-        line-height: var(--font-text-lh);
-        margin-top: 0;
     }
 }
 }
@@ -59,25 +56,11 @@
 @media screen and (min-width: 1200px) {
 .article {
     &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
     border-radius: 4px;
     background-color: var(--light-gray-color);
     }
-    &__heading {
-        font-size: var(--font-text);
-        line-height: var(--font-text-lh);
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
     &__paragraph {
-        color: var(--description-color);
         width: 270px;
-        letter-spacing: .03em;
-        line-height: var(--font-text-lh);
-        margin-top: 0;
     }
 }
 }
