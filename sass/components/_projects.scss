@@ -26,10 +26,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
     &__img-box-overlay {
       box-sizing: border-box;
-      width: 450px;
-      max-height: 294px;
       position: relative;
       overflow: hidden;
       margin-left: auto;
@@ -40,7 +39,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 294px;
+      max-height: 294px;
       background-color: rgba(33, 150, 243, 0.9);
       transform: translatey(140%);
       @include trans;
@@ -74,7 +73,7 @@
   }
 
   .project-img {
-    width: 450px;
+    width: 100%;
     max-height: 294px;
     object-fit: cover;
   }
