@@ -83,3 +83,31 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px),
     }
 }
 }
+
+@media screen and (min-width: 1200px) {
+.main-title {
+    padding: 94px 0;
+    display: flex;
+    background: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url("../images/bg-img.jpg") no-repeat top center;
+    background-size: cover;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 30px;
+    &__heading {
+        font-size: var(--font-header);
+        color: var(--main-white-color);
+        line-height: var(--font-header-lh);
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    &__button {
+        @include btnBlue;
+        &:hover, &:focus {
+            @include trans;
+        }
+    }
+}
+}

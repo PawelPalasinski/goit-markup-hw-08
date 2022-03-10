@@ -30,10 +30,9 @@ footer {
   }
 }
 
-// HW-8
-// mobile first
-// pobrac zdjecia w small dla mobile x1, x2, medium dla tabletu x1, x2, na desktop x2 (prefix @2x)
-// przekonwertowac na mniejsze rozmiary (?) - to mozna zronic na koncu
-// style dla mobile - komentuje co jest i na tej bazie robie mobile
-// zrobic @ media zgodnie z zadaniem
-// mobile jest podstawa - wiec style dla niego sa pierwszorzedne (sprawdzam wszytsko odstepy
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

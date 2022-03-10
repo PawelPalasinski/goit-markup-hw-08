@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .nav-container {
     max-width: 480px;
     margin: 0 auto;
@@ -53,7 +53,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 .nav-container {
     max-width: 738px;
     margin: 0 auto;
@@ -147,93 +147,106 @@
 
 }
 
+@media screen and (min-width: 1200px) {
+.nav-container {
+    width: 1200px;
+    margin: 0 auto;
+}
 
-// .nav-container {
-//     width: 1200px;
-//     margin: 0 auto;
-// }
+.nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 1200px;
+    &__logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
+    &__links-list {
+        list-style: none;
+        display: flex;
+        box-sizing: border-box;
+        column-gap: 46px;
+        font-weight: 500;
+        color: var(--main-font-color);
+        }
+        &__header-contacts-list {
+            list-style: none;
+            display: flex;
+            box-sizing: border-box;
+            column-gap: 30px;
+            margin-left: 345px;
+            padding-left: 0;
+        }
+    }
 
-// .nav {
-//     display: flex;
-//     align-items: center;
-//     height: 80px;
-//     width: 1200px;
-//     &__logo {
-//         padding-top: 24px;
-//         padding-bottom: 25px;
-//         margin-right: 93px;
-//     }
-//     &__links-list {
-//         list-style: none;
-//         display: flex;
-//         box-sizing: border-box;
-//         column-gap: 46px;
-//         font-weight: 500;
-//         color: var(--main-font-color);
-//         }
-//         &__header-contacts-list {
-//             list-style: none;
-//             display: flex;
-//             box-sizing: border-box;
-//             column-gap: 40px;
-//             margin-left: 345px;
-//             padding-left: 0;
-//         }
-//     }
+.nav-list__link {  
+    &--page-link {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--main-font-color);
+        position: relative;
+        &:hover, &:after {
+            color: var(--blue-color);
+            @include trans;
+        }
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        &::after {
+            @include linkAfter;
+            @include trans;
+        }
+    }
+    &--page-link-active {
+        text-decoration: none;
+        color: var(--blue-color);
+        position: relative;
+        &:hover, &:focus {
+            color: var(--blue-color);
+            @include trans;
+        }
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        &::after {
+            @include linkAfter;
+            width: 100%;
+        }
+    }
+}
 
-// .nav-list__link {
-//     &--page-link {
-//         text-decoration: none;
-//         font-weight: 500;
-//         color: var(--main-font-color);
-//         position: relative;
-//         &:hover, &:after {
-//             color: var(--blue-color);
-//             @include trans;
-//         }
-//         &:hover::after {
-//             width: 100%;
-//             left: 0;
-//         }
-//         &::after {
-//             @include linkAfter;
-//             @include trans;
-//         }
-//     }
-//     &--page-link-active {
-//         text-decoration: none;
-//         color: var(--blue-color);
-//         position: relative;
-//         &::after {
-//             @include linkAfter;
-//             width: 100%;
-//         }
-//     }
-// }
+.header-contact {
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--description-color);
+        position: relative;
+        fill: var(--description-color);
+        &:hover, &:focus {
+            color: var(--blue-color);
+            @include trans;
+            fill: var(--blue-color);
+        }
+        &::after {
+            @include linkAfter;
+            @include trans;
+        }
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        &::after {
+            @include linkAfter;
+            @include trans;
+        }
+    }
+  }
+    .mobile-menu {
+      display: none;
+    }
 
-// .header-contact {
-//     &__link {
-//         text-decoration: none;
-//         font-weight: 500;
-//         color: var(--description-color);
-//         position: relative;
-//         fill: var(--description-color);
-//         &:hover, &:focus {
-//             color: var(--blue-color);
-//             @include trans;
-//             fill: var(--blue-color);
-//         }
-//         &::after {
-//             @include linkAfter;
-//             @include trans;
-//         }
-//         &:hover::after {
-//             width: 100%;
-//             left: 0;
-//         }
-//         &::after {
-//             @include linkAfter;
-//             @include trans;
-//         }
-//     }
-// }
+}
