@@ -1,4 +1,4 @@
-#GoIT - 8th homework - final page
+# GoIT - 8th homework - final page
 
 WebStudio - Landing page of Web Design Studio (HTML, CSS/SCSS, BEM, RWD)
 
